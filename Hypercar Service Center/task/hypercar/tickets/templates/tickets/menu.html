@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ticket Menu</title>
+</head>
+<body>
+<ul>
+{% for text, path in options.items %}
+<p>
+    <li><a target="_blank" href="/get_ticket/{{ path }}">{{ text }}</a></li>
+</p>
+{% endfor %}
+</ul>
+
+</body>
+</html>
